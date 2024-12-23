@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forgot Password</title>
+  <style>
+    /* General body styling */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6b8e23, #3a5a40); 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    /* Container for the forgot password form */
+    .forgot-password-container {
+      background-color: rgba(255, 255, 255, 0.9); 
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      text-align: center;
+      backdrop-filter: blur(10px); /* Subtle blur effect */
+    }
+
+    /* Header */
+    .forgot-password-container h1 {
+      margin-bottom: 30px;
+      font-size: 24px;
+      color: #3a5a40; 
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    /* Input fields styling */
+    .forgot-password-container input {
+      width: 100%;
+      padding: 15px;
+      margin: 15px 0;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      background-color: #f1f1f1;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    /* Focus effect for input fields */
+    .forgot-password-container input:focus {
+      border-color: #6b8e23;
+      background-color: #fff;
+    }
+
+    /* Submit button styling */
+    .forgot-password-container button {
+      width: 100%;
+      padding: 15px;
+      background: linear-gradient(135deg, #6b8e23, #3a5a40);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    /* Button hover effect */
+    .forgot-password-container button:hover {
+      background: linear-gradient(135deg, #556b2f, #3a5a40);
+      transform: translateY(-2px); 
+    }
+
+    /* Link back to login */
+    .back-to-login {
+      color: #6b8e23; 
+      font-size: 14px;
+      text-decoration: none;
+      margin-top: 20px;
+      display: block;
+      transition: color 0.3s ease;
+    }
+
+    .back-to-login:hover {
+      color: #556b2f;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="forgot-password-container">
+    <h1>Forgot Your Password?</h1>
+    <form>
+      <input type="email" placeholder="Enter your email" required>
+      <button type="submit">Reset Password</button>
+    </form>
+    <a href="login.html" class="back-to-login">Back to Login</a>
+  </div>
+</body>
+</html>

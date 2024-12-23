@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="shortcut icon" href="logo/ghwhitelogo.jpg" type="image/x-icon">
+  <style>
+    /* General body styling */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6b8e23, #3a5a40); /* Gradient background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+    }
+
+    /* Container for the login form */
+    .login-container {
+      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      text-align: center;
+      backdrop-filter: blur(10px); /* Subtle blur effect */
+    }
+
+    /* Welcome header */
+    .login-container h1 {
+      margin-bottom: 30px;
+      font-size: 24px;
+      color: #3a5a40; 
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    /* Input fields styling */
+    .login-container input {
+      width: 100%;
+      padding: 15px;
+      margin: 15px 0;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      background-color: #f1f1f1;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    /* Focus effect for input fields */
+    .login-container input:focus {
+      border-color: #6b8e23;
+      background-color: #fff;
+    }
+
+    /* Forgot password link styling */
+    .login-container a {
+      color: #6b8e23; 
+      font-size: 14px;
+      text-decoration: none;
+      transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    /* Hover effect for forgot password link */
+    .login-container a:hover {
+      color: #556b2f; /* Darker green on hover */
+      text-decoration: underline; /* Underline on hover */
+    }
+
+    /* Submit button styling */
+    .login-container button {
+      width: 100%;
+      /* height: 30px; */
+      /* padding: 15px; */
+      background: linear-gradient(135deg, #6b8e23, #3a5a40);
+      border: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    .login-container button > a {
+      display: block;
+      /* width: 100%; */
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 15px;
+    }
+
+    /* Button hover effect */
+    .login-container button:hover {
+      background: linear-gradient(135deg, #556b2f, #3a5a40);
+      transform: translateY(-2px); /* Slight lift effect */
+    }
+
+    /* "Create an Account" link */
+    .create-account {
+      color: #6b8e23; 
+      font-size: 14px;
+      text-decoration: none;
+      margin-top: 20px;
+      display: block;
+      transition: color 0.3s ease;
+    }
+
+    .create-account:hover {
+      color: #556b2f;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Welcome to GoodHealth!</h1>
+    <form>
+      <input type="text" required id="username" placeholder="Username">
+      <input type="password" required id="password" placeholder="Password">
+      <a href="forgot-pass.html">Forgot Password?</a>
+      <button type="submit" id="submit" href="mainpage.html">
+       <a href="mainpage.html">Login</a>
+      </button>
+    </form>
+    <a href="create-acc.html" class="create-account">Doesn't have an account? Create one</a>
+  </div>
+  <script src="/mySchool/Trash/trash.js"></script>
+</body>
+</html>

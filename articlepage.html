@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Health</title>
+    <link rel="shortcut icon" href="logo/ghwhitelogo.jpg" type="image/x-icon">
+    <link rel="stylesheet"  href="articlepage.css">
+    <style>
+        .topics {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+            width: 90%;
+            height: 100%;
+
+
+            background-color: white;
+
+            padding-left: 20px;
+            height: 100%;
+        }
+
+        .topics > h1,h2{
+            scroll-margin-top: 40px;
+            margin-top: 20px;
+        }
+
+        .topics p {
+            word-spacing: 4px;
+            line-height: 25px;
+        }
+        
+        .topics *:not(h1,h2) {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        footer {
+            height: 150px;
+            width: 100%;
+            background-color: rgb(35, 35, 35);
+        }
+        footer * {
+            color: white;
+        }
+
+        .sidebar a {
+            color: blue;
+            text-decoration: underline blue;
+        }
+/* 
+        #toggle {
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+            position: absolute;
+            top:  49px;
+            right: 10px;
+             box-shadow: 0px 2px 9px black;
+            transform: rotate(180deg);
+
+        } */
+    </style>
+</head>
+<body>
+    <nav class="top-navigation">
+        <ul>
+            <li class="top-left">
+                <a href=""><img src="logo/ghwhitelogo.jpg"  id="logo" alt="" width="34px"></a>
+                <img src="logo/humburger.png" id="menu-icon" alt="" width="30px">
+            </li>
+            <li class="search-bar">
+                <input type="text" placeholder="Search...">
+            </li>
+            <li class="top-right">
+                <a href="" style="text-wrap: nowrap;"><img src="logo/notification.png" alt=""></a>
+                <a href="" style="text-wrap: nowrap;">Help</a>
+                <a href="" style="text-wrap: nowrap;">Login</a>
+                <a href="" style="text-wrap: nowrap;"><img src="logo/user.png" alt=""></a>
+            </li>
+        </ul>
+        <div id="toggle" style="transform: rotate(0deg);">
+            <img src="logo/right-arrow.png" width="100%">
+        </div>
+    </nav>
+
+    <div class="main-container" id="main">  
+
+        <div class="left-navigation-container" id="left-nav" style="border-right: 1px solid lightgray;">
+            <div class="additional-navigation">
+                <a href="mainpage.html"><img src="logo/circle home.png" alt="" style="width: 25px;"> Good Health</a href="">
+            </div>
+
+            <div class="left-navigation-menu">
+                <section class="topic">
+                    <h4>TOPICS</h4>
+                    <details>
+                        <summary>General Health </summary>
+                        <ul>
+                            <li><a href="">Nutrition</a></li>
+                            <li><a href="">link99</a></li>
+                            <li><a href="">link100</a></li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>Mental Health</summary>
+                        <ul>
+                            <li><a href="">anxiety</a></li>
+                            <li><a href="">depression</a></li>
+                            <li><a href="">stress management</a></li>
+                            <li><a href="">mindfulness</a></li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>Women's Health</summary>
+                        <ul>
+                            <li><a href="">pregnancy</a></li>
+                            <li><a href="">menopause</a></li>
+                            <li><a href="">reproductive health</a></li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>Men's Health</summary>
+                        <ul>
+                            <li><a href="">prostate health</a></li>
+                            <li><a href="">testosterone levels</a></li>
+                            <li><a href="">general wellness</a></li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>Child Health</summary>
+                        <ul>
+                            <li><a href="">vaccinations</a></li>
+                            <li><a href="">growth milestones</a></li>
+                            <li><a href="">common childhood illnesses</a></li>
+                        </ul>
+                    </details>
+
+                    <details>
+                        <summary>Senior Health</summary>
+                        <ul>
+                            <li><a href="">age-related health concerns</a></li>
+                            <li><a href="">health aging</a></li>
+                            <li><a href="">elder care</a></li>
+                        </ul>
+                    </details>
+                </section>
+
+                <section class="service">
+                    <h4>SERVICES</h4>
+                    <details>
+                        <summary style="text-align: center;">Online Consultation with our doctors</summary>
+                        <ul>
+                            <li><a href="">Doc. Orak</a></li>
+                            <li><a href="">Doc. Johnzell</a></li>
+                            <li><a href="">Doc. Mikey</a></li>
+                            <li><a href="">Doc. Draken</a></li>
+                        </ul>
+                    </details>
+                </section>
+            </div>
+            
+            <div class="copyright">
+                <p>@copyright all right reserve</p>
+            </div>
+        </div>
+
+        <div class="main-content" id="mains">
+            <div class="topics">
+                <h1 id="whatisanxiety">What Is Anxiety</h1>
+                <p>Anxiety is an emotion characterized by feelings of tension, worried thoughts, and physical changes like increased blood pressure.
+
+                    Anxiety is not the same as fear, but they are often used interchangeably. Anxiety is considered a future-oriented, long-acting response broadly focused on a diffuse threat, whereas fear is an appropriate, present-oriented, and short-lived response to a clearly identifiable and specific threat.</p>
+                    <img src="./sampleImage/bulbasaur.jpg" alt="">
+                <h2>The effects of anxiety on the body</h2>
+                <p>Anxiety can significantly affect the body, and long-term anxiety increases the risk of developing chronic physical conditions. Some of the ways that anxiety affects the body include the following.</p>
+
+                <h2 id="howtopreventanxiety">How To Prevent Anxiety</h2>
+                <img src="./sampleImage/gengar.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur at magni ut consequatur minima numquam magnam repellat veritatis quisquam architecto cum quod error animi doloribus omnis reiciendis nulla eum aperiam quia tenetur, sit vitae? Accusamus voluptatem neque commodi omnis unde, labore tempore aliquam sint in nulla distinctio dolorum vel expedita dolor rem hic nesciunt cupiditate eveniet qui ducimus ipsum ipsa ullam! Neque totam fugiat repellat molestiae officiis libero, cum voluptatibus assumenda nemo aperiam adipisci laudantium vel beatae esse corrupti animi autem, officia aliquam ullam ipsa, dicta mollitia numquam hic fugit. Neque ex minima porro assumenda facere veritatis quidem quos rem enim ullam? Consequuntur vero est error non tempore autem ab tempora fugit corrupti odio blanditiis doloremque delectus deleniti, cupiditate cumque aperiam atque voluptate quis consequatur deserunt reiciendis provident expedita. Molestias dolore temporibus ab dolorum maiores sunt rerum amet, hic illum, praesentium necessitatibus sint soluta earum assumenda! Deserunt odio id alias eaque fugit a, soluta eius labore aliquam quasi consequuntur fugiat quibusdam eos rem numquam, iste tempore modi nostrum non veniam aperiam amet? Quidem laborum, quos repellendus necessitatibus enim doloribus iste assumenda inventore ipsa pariatur error officia unde rerum saepe repudiandae consequuntur velit ipsam accusantium incidunt nihil exercitationem deleniti, officiis facere!</p>
+            </div>
+            <!-- <div class="user-post">
+                <div class="post-info">
+                    <span style="font-size: 11px; color: gray;">Posted 10 hr.ago</span><br>
+                    <span class="posted-by">Barnes</span>
+                    <p>#minerals</p>
+                </div>
+                <div class="form-of-contents">
+                    <img src="sampleImage/bertellifotografia.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="user-post">
+                <div class="post-info">
+                    <span style="font-size: 11px; color: gray;">Posted 10 hr.ago</span><br>
+                    <span class="posted-by">Hogan</span>
+                    <p>#power</p>
+                </div>
+                <div class="form-of-contents">
+                    <img src="sampleImage/gengar.png" alt="">
+                </div>
+            </div>
+            
+            <div class="user-post">
+                <div class="post-info">
+                    <span style="font-size: 11px; color: gray;">Posted 10 hr.ago</span><br>
+                    <span class="posted-by">Hughes</span>
+                    <p style="text-decoration: 2px underline darkgreen;">#mountain</p>
+                </div>
+                <div class="form-of-contents">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quae soluta quis natus autem voluptate provident laudantium vel amet possimus?</p>
+                </div>
+            </div>
+            
+            <div class="user-post">
+                <div class="post-info">
+                    <span style="font-size: 11px; color: gray;">Posted 10 hr.ago</span><br>
+                    <span class="posted-by">Brewer</span>
+                    <p>#listen</p>
+                </div>
+                <div class="form-of-contents">
+                    <video controls>
+                        <source src="videoSample/malinaw.mp4" type="">
+                    </video>
+                </div>
+            </div> -->
+            <footer>
+                <b>Good Health</b>
+                <br>
+                <span>
+                    1234 Main St., San Pedro, Calabarzon, Philippines<br>
+
+                    Phone: +63-123-456-7890<br>
+                    
+                    Email: info@companyname.com</span>
+            </footer>
+        </div>
+
+        <div class="sidebar" id="side" style="display: block;" >
+            <h4>In this Article</h3>
+            <div class="con" style="border-left: 2px solid gray; display: grid; gap: 10px; padding: 5px;">
+
+                    <a href="#whatisanxiety" id="link1">What Is Anxiety?</a>
+                    <a href="#whatisanxiety" id="link1">The effects of anxiety on the body</a>
+                    <a href="#howtopreventanxiety">How To Prevent Anxiety</a>
+                    <p>This depends on the topic or where to navigate</p>
+                </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
